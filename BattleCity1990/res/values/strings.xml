@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">取消</string>
+    <string name="life_title">坦克生命数</string>
+    <string name="menu_about">关于Battle City</string>
+    
+    <string name="vibrate_summary">爆炸时的震动效果</string>
+    <string name="vibrate_title">震动效果</string>
+    
+    <string name="menu_setting">游戏设置</string>
+    <string name="music_summary">是否播放子弹等音效</string>
+    <string name="music_title">开启音效</string>
+    
+    <string name="stage_title">选择关卡</string>
+    
+    <string name="hello">Hello World, BattleCity!</string>
+    <string name="app_name">Battle City</string>
+</resources>

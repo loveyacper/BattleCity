@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@null"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <!-- 左侧的方向键 -->
+   <LinearLayout android:orientation="vertical"
+    android:id="@+id/padlayout"
+    android:layout_weight="0"
+    android:gravity="bottom|center"
+    android:layout_width="wrap_content"
+  	android:layout_height="fill_parent">
+
+        <ImageView android:id="@+id/logoview"
+  			  android:background="@null"
+  			  android:src="@drawable/fc"
+  			  android:scaleType="center"
+  			  android:layout_weight="8.0"
+  			  android:padding="3dp"
+              android:layout_width="fill_parent"  
+	          android:layout_height="wrap_content">
+	    </ImageView>
+	    
+         <ImageButton android:id="@+id/pad"
+            android:src="@drawable/pad_selector"
+            android:background="@null"
+            android:layout_weight="1.0"
+            android:padding="3dp"            
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+          />
+      
+   </LinearLayout>
+   
+   <!-- 中间的主游戏区 -->
+    <LinearLayout android:orientation="vertical"
+    	android:layout_width="wrap_content"
+  		android:layout_height="fill_parent">   
+
+        <bert.young.GameView android:id="@+id/gameview"
+              android:layout_width="fill_parent"  
+	          android:layout_height="fill_parent"/>
+	</LinearLayout>
+ 
+	   
+	   <!-- 右侧的  开火 -->
+    <LinearLayout android:orientation="vertical"
+        android:gravity="bottom|left"
+    	android:layout_width="wrap_content"
+  		android:layout_height="fill_parent"> 
+  		
+  		<bert.young.InfoView android:id="@+id/infoview"
+  			  android:background="@null"
+  			  android:gravity="top|left"
+  			  android:layout_weight="8.0"
+  			  android:padding="3dp"
+              android:layout_width="wrap_content"  
+	          android:layout_height="wrap_content">
+	    </bert.young.InfoView>
+ 	   
+ 	   <ImageButton android:id="@+id/fire" 
+            android:src="@drawable/fire_selector"
+            android:background="@null"
+            android:layout_weight="1.0"
+            android:padding="3dp"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"/>
+            
+	</LinearLayout>
+ 
+</LinearLayout>

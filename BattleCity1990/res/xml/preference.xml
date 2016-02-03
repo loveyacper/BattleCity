@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+   
+  <CheckBoxPreference
+		android:key="music"
+		android:title="@string/music_title"
+		android:summary="@string/music_summary"
+		android:defaultValue="true" />
+		
+	<CheckBoxPreference
+		android:key="vibrate"
+		android:title="@string/vibrate_title"
+		android:summary="@string/vibrate_summary"
+		android:defaultValue="false" />
+		
+	<EditTextPreference
+		android:key="selectstage"
+		android:defaultValue="1"
+		android:numeric="integer|decimal"		
+		android:title="@string/stage_title"/>
+
+  <ListPreference
+        android:entries="@array/lifenum_entries" android:negativeButtonText="@string/cancel" android:dialogTitle="@string/life_title" android:entryValues="@array/lifenum_values" android:title="@string/life_title" android:key="life">
+  </ListPreference>
+
+</PreferenceScreen>
